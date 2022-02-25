@@ -21,7 +21,7 @@ def intializeTello():
     return myDrone
 
 def findFace(img):
-    faceCascade = cv2.CascadeClassifier("D:/drone_programming/haarcascades/haarcascade_frontalface_default.xml")
+    faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
     imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = faceCascade.detectMultiScale(imgGray, 1.1, 4)
     myFacesListC = []
